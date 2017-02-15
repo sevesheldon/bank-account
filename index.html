@@ -13,14 +13,14 @@
 
     <div class="container">
       <div class="jumbotron text-center">
-        <h1>Welcome to<br><strong>Epicodus Credit Union</strong></h1>
+        <h1>Welcome to<br><strong>Sheldon Credit Union</strong></h1>
       </div>
-        <div id="show-accounts" class="panel panel-info">
+        <div id="accounts" class="panel panel-info">
           <div class="panel-heading">
             <h2 class="panel-title">Accounts:</h2>
           </div>
           <div class="panel-body">
-            <ul>
+            <ul id="show-accounts">
 
             </ul>
           </div>
@@ -52,7 +52,7 @@
               <h2 class="panel-title">Deposit or Withdraw funds:</h2>
             </div>
             <div class="panel-body">
-              <form id="edit-bank-account">
+              <form id="edit-bank-account" data-acct="">
                 <div class="form-group">
                   <label for="deposit">Deposit amount:</label>
                   <input type="text" id="deposit" class="form-control">

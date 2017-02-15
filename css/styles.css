@@ -1,7 +1,16 @@
 #accounts {
   /*border: 1px red solid;*/
-  /*display: none;*/
+  display: none;
 
+}
+
+.account {
+  cursor: pointer;;
+  color: #0088cc;
+}
+
+.account:hover {
+  text-decoration: underline;;
 }
 
 #account-initialize {
@@ -16,5 +25,5 @@
 
 #account-display {
   /*border: 1px blue solid;*/
-  /*display: none;*/
+  display: none;
 }
