@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bank Account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>Welcome to<br><strong>Epicodus Credit Union</strong></h1>
+      </div>
+        <div id="show-accounts" class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Accounts:</h2>
+          </div>
+          <div class="panel-body">
+            <ul>
+
+            </ul>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="account-registration" class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Register a new account:</h2>
+            </div>
+            <div class="panel-body">
+              <form id="new-bank-account">
+                <div class="form-group">
+                  <label for="new-name">Name:</label>
+                  <input type="text" id="new-name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="new-deposit">Initial Deposit:</label>
+                  <input type="text" id="new-deposit" class="form-control">
+                </div>
+                <button type="submit" class="btn">Register account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="account-activity" class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Deposit or Withdraw funds:</h2>
+            </div>
+            <div class="panel-body">
+              <form id="edit-bank-account">
+                <div class="form-group">
+                  <label for="deposit">Deposit amount:</label>
+                  <input type="text" id="deposit" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="withdrawal">Withdrawal amount:</label>
+                  <input type="text" id="withdrawal" class="form-control">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="account-display" class="panel panel-success">
+          <div class="panel-heading">
+            <h2 id="show-name" class="panel-title"></h2>
+          </div>
+          <div class="panel-body">
+            <p>Current Balance:<span id="show-balance"></span></p>
+        </div>
+    </div>
+
+  </body>
+</html>
